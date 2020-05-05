@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="diploma.gametheory">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".userdetails.UserDetails"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".main.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".gate.ActivityRegister"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".gate.ActivityLogin"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".quizzes.ActivityQuizzes"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".books.ActivityBooks"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".notes.ActivityNotes"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".notes.ActivityNewMemory"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".courses.ActivityCourses"
+            android:theme="@style/CourseTheme" />
+        <activity android:name=".books.PdfViewActivity" />
+        <activity android:name=".quizzes.QuizActivity" />
+    </application>
+
+</manifest>
